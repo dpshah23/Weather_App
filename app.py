@@ -14,5 +14,4 @@ def get_weather():
     data = weather(city)
     return render_template('main.html',data=data,action="/get_weather")
 
-if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0') 
+
