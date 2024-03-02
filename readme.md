@@ -15,7 +15,7 @@ This is a simple weather application built with Flask that fetches weather data 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/weather-app.git
+git clone https://github.com/dpshah23/Weather_App.git
 ```
 
 2. Install the required packages:
@@ -29,7 +29,7 @@ pip install flask requests
 1. Navigate to the project directory:
 
 ```bash
-cd weather-app
+cd Weather_App
 ```
 
 2. Run the Flask app:
