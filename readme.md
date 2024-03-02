@@ -1,56 +1,73 @@
-# Weather App using WeatherAPI.com API
+# Weather App using weatherapi.com API
 
-## Overview
-This is a simple Flask application that utilizes the WeatherAPI.com API to fetch current weather information for a given city. The application allows users to input a city name and receive details such as location, temperature (in Fahrenheit and Celsius), and current weather condition.
+This is a simple weather application built with Flask that fetches weather data using the weatherapi.com API. Users can input a city, and the app will display the current weather conditions for that city.
 
-## Prerequisites
-Make sure you have the following installed:
+## Getting Started
+
+### Prerequisites
 
 - Python 3
 - Flask
-- Requests library
+- Requests
 
-You can install the required libraries using the following command:
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your_username/weather-app.git
+```
+
+2. Install the required packages:
 
 ```bash
 pip install flask requests
 ```
 
-## Usage
-1. Clone the repository:
+### Running the App
 
-```bash
-git clone https://github.com/your-username/weather-app.git
-```
-
-2. Navigate to the project directory:
+1. Navigate to the project directory:
 
 ```bash
 cd weather-app
 ```
 
-3. Run the Flask application:
+2. Run the Flask app:
 
 ```bash
 python app.py
 ```
 
-4. Open your browser and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+The app will be accessible at `http://localhost:5000/` in your web browser.
 
-5. Enter the desired city in the input field and click the "Get Weather" button.
+## How to Use
+
+1. Access the home page at `http://localhost:5000/`.
+
+2. Enter the desired city in the provided input box.
+
+3. Click the "Get Weather" button to retrieve the current weather conditions for the specified city.
+
+## Live Demo
+
+This weather app is hosted on Render, and you can access it at the following URL:
+
+[https://weatherapp-ijuk.onrender.com/](https://weatherapp-ijuk.onrender.com/)
 
 ## Code Structure
 
-### `app.py`
-This file contains the Flask application. It defines two routes: `/` for rendering the main page and `/get_weather` for handling the form submission and displaying weather information.
+The code is organized as follows:
 
-### `weather.py`
-The `weather` function in this file makes a request to the WeatherAPI.com API using the provided API key and the city input. It extracts relevant information such as location, temperature, and weather condition, converts the temperature to Celsius, and returns a list containing this information.
+- `app.py`: Flask application containing the routes.
+- `weather.py`: Module for fetching weather data from the weatherapi.com API.
 
-## API Key
-Replace the placeholder API key (`4da0e8341db549c0b6c163519231608`) in the `weather.py` file with your WeatherAPI.com API key. You can sign up for a free account on [WeatherAPI.com](https://www.weatherapi.com/) to obtain your API key.
+## API Used
+
+The app uses the [weatherapi.com](http://www.weatherapi.com/) API to get current weather data.
 
 ## Acknowledgments
-- This application utilizes the WeatherAPI.com API for weather data.
 
-Feel free to customize and extend the application based on your needs. If you have any questions or issues, please [open an issue](https://github.com/your-username/weather-app/issues) on the GitHub repository.
+- Flask: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
+- weatherapi.com: [http://www.weatherapi.com/](http://www.weatherapi.com/)
+
+Feel free to explore and modify the code according to your needs.
